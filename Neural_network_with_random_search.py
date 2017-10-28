@@ -252,7 +252,7 @@ def build_model(X, X1, y, y1, layers, num_passes=20000, print_loss=False):
 
     # Gradient descent. For each batch.
     for i in range(0, num_passes):
-
+        print(i)
         # Forward propagation
         probs, a = forward_propagation(w, b, X, nn_layers)
 
